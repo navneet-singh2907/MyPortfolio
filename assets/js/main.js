@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const sr = ScrollReveal({
     origin: 'bottom',
     distance: prefersReduced ? '0px' : '40px',
-    duration: prefersReduced ? 0 : 1800,
-    delay: prefersReduced ? 0 : 350,
+    duration: prefersReduced ? 0 : 2000,
+    delay: prefersReduced ? 0 : 400,
     reset: false
   });
 
