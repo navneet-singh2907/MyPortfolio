@@ -289,6 +289,23 @@ main hr {
     color: green;
 }
 
+.project{
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to right , gray, rgb(135, 60, 60));
+    
+}
+.project-image img{
+    width: 50vw;
+}
+.project-info{
+    display: flex;
+    flex-direction: column;
+}
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
 footer {
     background-color: rgb(12 12 77);
     height: 50px;

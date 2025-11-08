@@ -26,6 +26,11 @@ document.addEventListener('DOMContentLoaded', () => {
   sr.reveal('.SecondSection .vertical', { interval: 110 });
   sr.reveal('.SecondSection .image-top, .SecondSection .vertical-title, .SecondSection .vertical-desc', { interval: 90 });
 
+  // PROJECTS (projects section)
+  sr.reveal('.projects .project', { interval: 150 });
+  sr.reveal('.projects .project-image', { delay: 120 });
+  sr.reveal('.projects .project-info, .projects .text, .projects .lm-btn', { interval: 100 });
+
   // Footer
   sr.reveal('footer, .footer-rights', { distance: '20px', delay: 120 });
 });
