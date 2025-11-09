@@ -414,6 +414,7 @@ main hr {
 /* ===================== CERTIFICATIONS ===================== */
 .certs{
   max-width: 1100px;
+  text-align: center;
   border-top: 1px solid rgb(224, 153, 153);  
   margin: 80px auto;
   padding: 8px 16px 32px;
@@ -602,6 +603,52 @@ main hr {
     width: 100%;
   }
 }
+/* Reusable heading underline for all main sections */
+.projects h1::after,
+.certs h1::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #5e8bff;  /* same color as Contact underline */
+  margin: 6px auto 0;   /* centers under the text */
+  border-radius: 2px;
+}
+
+
+/* Fade-in underline animation */
+@keyframes underlineSlide {
+  0% {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+
+.projects h1::after,
+.certs h1::after,
+.contact h1::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #5e8bff;
+  margin: 6px auto 0;
+  border-radius: 2px;
+  opacity: 0;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: all 0.5s ease;
+}
+
+/* active animation class triggered by ScrollReveal */
+.revealed h1::after {
+  animation: underlineSlide 0.8s forwards ease-in-out;
+}
+
 
 
 /* ===================== FOOTER ===================== */
